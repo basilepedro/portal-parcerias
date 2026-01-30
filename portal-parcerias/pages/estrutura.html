@@ -1,0 +1,240 @@
+<section class="card">
+  <h2>Estrutura da Área de Parcerias</h2>
+
+  <p>
+    A área de Parcerias opera com três frentes integradas que cobrem todo o ciclo de vida de uma parceria,
+    desde a identificação até a gestão contínua.
+  </p>
+
+  <div class="estrutura-grid">
+    <article class="pilar-card">
+      <div class="pilar-header">
+        <span class="pilar-icon">🔍</span>
+        <h3>1. Partner Sourcing & Legal Operations</h3>
+      </div>
+      
+      <div class="objetivo-tag">
+        <strong>Objetivo:</strong> Identificar, pesquisar e qualificar parceiros e prestadores externos que atendam necessidades estratégicas da Amorim ou de áreas internas.
+      </div>
+
+      <h4>Responsabilidades:</h4>
+      <ul>
+        <li><strong>Pesquisa de mercado:</strong> Mapeamento ativo de potenciais parceiros em áreas complementares ao nosso portfólio</li>
+        <li><strong>Qualificação inicial:</strong> Análise de fit estratégico, reputação, capacidade técnica e alinhamento cultural</li>
+        <li><strong>Apoio ao Jurídico:</strong> Recebimento de demandas do departamento jurídico para sourcing de prestadores especializados (advogados, despachantes, peritos, etc.)</li>
+        <li><strong>Diagnóstico de escopo:</strong> Análise detalhada da demanda para garantir clareza antes de iniciar buscas</li>
+        <li><strong>Entrega de shortlists:</strong> Apresentação de prestadores qualificados com análise comparativa e recomendações</li>
+      </ul>
+    </article>
+
+    <article class="pilar-card">
+      <div class="pilar-header">
+        <span class="pilar-icon">🤝</span>
+        <h3>2. Partner Deal & Activation</h3>
+      </div>
+
+      <div class="objetivo-tag">
+        <strong>Objetivo:</strong> Conduzir o processo de negociação e formalização de parcerias desde o primeiro contato até a assinatura do contrato.
+      </div>
+
+      <h4>Responsabilidades:</h4>
+      <ul>
+        <li><strong>Reuniões comerciais:</strong> Apresentação da Amorim, alinhamento de expectativas e diagnóstico de potencial</li>
+        <li><strong>Negociação:</strong> Discussão de termos comerciais, comissionamento, SLAs e modelo de relacionamento</li>
+        <li><strong>Estruturação contratual:</strong> Definição de cláusulas, responsabilidades e modelo de operação</li>
+        <li><strong>Aprovações internas:</strong> Coordenação com jurídico, financeiro e outras áreas quando necessário</li>
+        <li><strong>Processo de assinatura:</strong> Gestão do fluxo até a formalização completa da parceria</li>
+        <li><strong>Handoff para onboarding:</strong> Transferência estruturada para a próxima fase com todas as informações necessárias</li>
+      </ul>
+    </article>
+
+    <article class="pilar-card">
+      <div class="pilar-header">
+        <span class="pilar-icon">🚀</span>
+        <h3>3. Onboarding & Partner Success</h3>
+      </div>
+
+      <div class="objetivo-tag">
+        <strong>Objetivo:</strong> Garantir que parceiros sejam ativados com sucesso e que o relacionamento seja gerenciado de forma contínua para maximizar resultados.
+      </div>
+
+      <h4>Responsabilidades:</h4>
+      <ul>
+        <li><strong>Onboarding estruturado:</strong> Apresentação de processos, sistemas, contatos-chave e expectativas operacionais</li>
+        <li><strong>Organização de informações:</strong> Criação de pastas, documentação centralizada e materiais de apoio</li>
+        <li><strong>Treinamento inicial:</strong> Capacitação do parceiro sobre como operar com a Amorim</li>
+        <li><strong>Gestão de relacionamento:</strong> Check-ins regulares, resolução de dúvidas e alinhamento contínuo</li>
+        <li><strong>Monitoramento de performance:</strong> Acompanhamento de indicadores, resultados e satisfação mútua</li>
+        <li><strong>Apoio ao time interno:</strong> Garantir que as áreas da Amorim saibam como acionar os parceiros corretamente</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="highlight-box">
+    <h4>Integração entre os fluxos</h4>
+    <p>
+      Os três fluxos trabalham de forma integrada. Uma demanda pode iniciar no Sourcing (identificação de um parceiro),
+      passar pelo Deal (negociação e contrato) e finalizar no Onboarding (ativação e gestão).
+      A comunicação contínua entre as frentes garante transições suaves e qualidade no relacionamento com parceiros.
+    </p>
+  </div>
+</section>
+
+<style>
+  .estrutura-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin: 2rem 0;
+  }
+
+  .pilar-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+    border: 1.5px solid rgba(226, 232, 240, 0.8);
+    border-radius: 18px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pilar-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .pilar-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .pilar-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 24px 64px rgba(99, 102, 241, 0.15);
+    background: linear-gradient(135deg, #ffffff 0%, #fefefe 100%);
+  }
+
+  .pilar-header {
+    border-bottom: 2px solid rgba(226, 232, 240, 0.6);
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    transition: border-color 0.3s ease;
+  }
+
+  .pilar-card:hover .pilar-header {
+    border-bottom-color: rgba(99, 102, 241, 0.2);
+  }
+
+  .pilar-icon {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .pilar-card:hover .pilar-icon {
+    transform: scale(1.1) rotate(-5deg);
+  }
+
+  .pilar-card h3 {
+    margin: 0;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+
+  .pilar-card h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    font-weight: 700;
+    margin: 24px 0 12px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .pilar-card h4::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(226, 232, 240, 0.8), transparent);
+    margin-left: 12px;
+  }
+
+  .pilar-card ul {
+    padding-left: 20px;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .pilar-card ul li {
+    margin-bottom: 12px;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .pilar-card ul li strong {
+    color: #1e293b;
+    font-weight: 600;
+  }
+
+  .objetivo-tag {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    color: #1e40af;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 18px 0;
+    border-left: 4px solid #3b82f6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .pilar-card:hover .objetivo-tag {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+  }
+
+  .objetivo-tag strong {
+    color: #1e3a8a;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .estrutura-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .pilar-card {
+      padding: 24px;
+    }
+
+    .pilar-icon {
+      font-size: 2rem;
+    }
+
+    .pilar-card h3 {
+      font-size: 1.1rem;
+    }
+  }
+</style>
